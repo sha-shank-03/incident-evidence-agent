@@ -1,0 +1,10 @@
+{
+  "format_version": "incident-faults/v1",
+  "tools": [
+    {
+      "failures": 2,
+      "kind": "transient",
+      "tool": "traces_find"
+    }
+  ]
+}

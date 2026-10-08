@@ -1,0 +1,19 @@
+{
+  "slug": "incident-evidence-agent",
+  "label": "final-main-demo",
+  "argv": [
+    "py",
+    "-3.11",
+    "scripts/check_demo.py",
+    "--out",
+    "work/main-final-demo-20261008"
+  ],
+  "cwd": "<local-portfolio>\\incident-evidence-agent",
+  "started_at_utc": "2026-10-08T02:13:36.764612+00:00",
+  "duration_seconds": 5.297,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": "DEMO CHECK PASSED commands=16 assertions=41 model_execution=false recorded_replay=false\nreceipt=<local-portfolio>\\incident-evidence-agent\\work\\main-final-demo-20261008\\receipt.json\n",
+  "stderr": "",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

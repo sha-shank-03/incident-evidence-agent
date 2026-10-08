@@ -1,0 +1,10 @@
+{
+  "format_version": "incident-faults/v1",
+  "tools": [
+    {
+      "failures": 1,
+      "kind": "permanent",
+      "tool": "changes_list"
+    }
+  ]
+}

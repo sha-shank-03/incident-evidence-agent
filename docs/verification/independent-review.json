@@ -1,0 +1,26 @@
+{
+  "review_id": "FINAL",
+  "reviewed_at_utc": "2026-10-08T02:17:43.298272+00:00",
+  "summary": "Whole repository independently accepted for the agreed local MVP.",
+  "assertions": "40 distinct meaningful tests complete:39 pass/one honest Windows file-symlink WinError1314 skip; actual NTFS junction confinement/output-alias test passes. Main freshly executes the documented demo:16 CLI processes/41 assertions, three cases and three retry profiles, independently counted raw errors, conflict counter-evidence/sparse uncertainty and fixed budgets. Six intentional negative gates reject wrong count/fabricated citation/refreshed IDs/unjustified conclusion/modified source (exit3), preserve existing output (exit2), and isolate changed oracle from identical generated reports/events (exit1, one failed case). All21 original input hashes stay unchanged.",
+  "inspection": "Main inspected fixed source loader/tools, bounded harness, report predicate gate and post-investigation separate evaluation at M1/M2, and inspected the final checker, README, architecture/contracts/contribution/limitations/demos, Apache2/runtime/action attribution, evidence and prepared read-only Windows/Linux CI. Primary sources independently confirm selected action tags, immutable commits, MIT licenses and Python3.11.9 x64 assets for both selected platforms. Main additionally checks literal raw counts, outcomes, report bytes/digests and oracle isolation outside checker assertions.",
+  "limitations": "Fresh deterministic mock tool/harness execution on fictional exports; no live model evaluation or replay command. Source/predicate consistency is not authenticated truth, historical execution or production diagnosis/causal accuracy. Fixed four-tool allowlist is not OS isolation or a hard wall deadline. Engine0.2.0 has no legacy engine/migration; archived M1 artifacts need engine0.1.0. Windows file-symlink privilege variant remains unexecuted; junction variant actually passed. Hosted CI/workflow engine, POSIX/Linux/macOS, other Python versions, live providers, production/security/performance evaluation remain unexecuted or out of scope. Files remain local/uncommitted; source manifest identifies exact bytes.",
+  "status": "passed",
+  "source_file_count": 51,
+  "repository": "incident-evidence-agent",
+  "scope": "Coordinating-agent review, separate from implementation worker; not third-party certification.",
+  "local_path_redaction": "Personal host prefixes replaced. Original receipt hashes below describe the unredacted local source; exports have separate hashes.",
+  "publication_change_scope": "README/AGENTS/contributor/context/evidence exports and ignore/attribute portability only. Runtime, tests, fixtures and dependency pins remain as accepted.",
+  "command_receipt_exports": [
+    {
+      "path": "docs/verification/main-command-00-final-main-tests.json",
+      "source_receipt_sha256": "037a1ef54a6f04af8c0634848f15207e1c3b9b6a8923c04ddfe3bbbf1a5ac88e",
+      "export_sha256": "2856ea257fd2d848061cd20c883bf18110066e4180c482bf84f88675a55c5ee5"
+    },
+    {
+      "path": "docs/verification/main-command-01-final-main-demo.json",
+      "source_receipt_sha256": "b920aeefa6f37af28e7ffc9448edd602d5912d278d8e04f5ff1be307f91566a7",
+      "export_sha256": "068d7096e119f1ace75a58d2215eb03a6583a3b0ff514b16cbe7f13895ceed6f"
+    }
+  ]
+}

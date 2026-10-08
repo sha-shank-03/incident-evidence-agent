@@ -1,0 +1,174 @@
+{
+  "cases": [
+    {
+      "assertions": [
+        {
+          "equals": "supported_hypothesis",
+          "kind": "conclusion"
+        },
+        {
+          "base_query": true,
+          "kind": "observation",
+          "predicate": "error_record_count",
+          "selector": {
+            "service": "checkout"
+          },
+          "value": {
+            "count": 3,
+            "structured_timeout_count": 3
+          }
+        },
+        {
+          "base_query": true,
+          "kind": "observation",
+          "predicate": "timeout_span_correlation",
+          "selector": {
+            "dependency": "payment",
+            "service": "checkout"
+          },
+          "value": {
+            "request_count": 3
+          }
+        },
+        {
+          "assessment": "supported",
+          "kind": "hypothesis",
+          "scope": {
+            "dependency": "payment"
+          },
+          "template_id": "dependency_timeout"
+        },
+        {
+          "codes": [
+            "spans_sampling",
+            "changes_coverage",
+            "underlying_cause_unknown"
+          ],
+          "kind": "gaps"
+        }
+      ],
+      "bundle": "dependency-timeout",
+      "id": "dependency-timeout",
+      "request": {
+        "service": "checkout",
+        "since": "2026-10-07T10:00:00Z",
+        "until": "2026-10-07T10:20:00Z"
+      }
+    },
+    {
+      "assertions": [
+        {
+          "equals": "inconclusive",
+          "kind": "conclusion"
+        },
+        {
+          "base_query": true,
+          "kind": "observation",
+          "predicate": "error_record_count",
+          "selector": {
+            "service": "checkout"
+          },
+          "value": {
+            "count": 3
+          }
+        },
+        {
+          "base_query": true,
+          "kind": "observation",
+          "predicate": "health_probe_summary",
+          "selector": {
+            "service": "checkout"
+          },
+          "value": {
+            "ok_count": 3,
+            "record_count": 3
+          }
+        },
+        {
+          "assessment": "mixed",
+          "kind": "hypothesis",
+          "scope": {
+            "change_id": "deploy-checkout-2"
+          },
+          "template_id": "deployment_initiated_incident"
+        },
+        {
+          "kind": "counter_evidence",
+          "predicate": "failure_deployment_order",
+          "scope": {
+            "change_id": "deploy-checkout-2"
+          },
+          "template_id": "deployment_initiated_incident",
+          "value": {
+            "earlier_error_count": 1,
+            "later_error_count": 2
+          }
+        },
+        {
+          "codes": [
+            "spans_sampling",
+            "underlying_cause_unknown"
+          ],
+          "kind": "gaps"
+        }
+      ],
+      "bundle": "conflicting-deployment",
+      "id": "conflicting-deployment",
+      "request": {
+        "service": "checkout",
+        "since": "2026-10-07T10:00:00Z",
+        "until": "2026-10-07T10:20:00Z"
+      }
+    },
+    {
+      "assertions": [
+        {
+          "equals": "inconclusive",
+          "kind": "conclusion"
+        },
+        {
+          "base_query": true,
+          "kind": "observation",
+          "predicate": "error_record_count",
+          "selector": {
+            "service": "checkout"
+          },
+          "value": {
+            "count": 2,
+            "event_time_fallback_count": 1,
+            "structured_timeout_count": 2
+          }
+        },
+        {
+          "assessment": "unassessable",
+          "kind": "hypothesis",
+          "scope": {
+            "dependency": "payment"
+          },
+          "template_id": "dependency_timeout"
+        },
+        {
+          "codes": [
+            "logs_coverage",
+            "spans_unavailable",
+            "spans_sampling",
+            "changes_unavailable",
+            "logs_trace_context_missing",
+            "dependency_correlation_missing",
+            "observed_time_fallback",
+            "underlying_cause_unknown"
+          ],
+          "kind": "gaps"
+        }
+      ],
+      "bundle": "sparse-incident",
+      "id": "sparse-incident",
+      "request": {
+        "service": "checkout",
+        "since": "2026-10-07T10:00:00Z",
+        "until": "2026-10-07T10:20:00Z"
+      }
+    }
+  ],
+  "format_version": "incident-oracles/v1"
+}

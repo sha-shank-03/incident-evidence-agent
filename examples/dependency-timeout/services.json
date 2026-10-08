@@ -1,0 +1,12 @@
+[
+  {
+    "dependencies": [
+      "payment"
+    ],
+    "service_name": "checkout"
+  },
+  {
+    "dependencies": [],
+    "service_name": "payment"
+  }
+]

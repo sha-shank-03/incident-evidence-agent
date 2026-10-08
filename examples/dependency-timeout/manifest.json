@@ -1,0 +1,26 @@
+{
+  "dataset_kind": "synthetic",
+  "format_version": "incident-bundle/v1",
+  "sources": {
+    "changes": {
+      "coverage": "unknown",
+      "file": "changes.jsonl",
+      "sampling": "none"
+    },
+    "logs": {
+      "coverage": "complete_for_export",
+      "file": "logs.jsonl",
+      "sampling": "none"
+    },
+    "services": {
+      "coverage": "complete_for_export",
+      "file": "services.json",
+      "sampling": "none"
+    },
+    "spans": {
+      "coverage": "complete_for_export",
+      "file": "spans.jsonl",
+      "sampling": "sampled"
+    }
+  }
+}
